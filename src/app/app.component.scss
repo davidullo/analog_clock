@@ -73,41 +73,45 @@ h6 {
 #clockContainer {
   position: relative;
   margin: auto;
-  height: 40vw;
-  width: 40vw;
-  background: url(./../assets/test.png) no-repeat;
+  height: 800px;
+  width: 800px;
+  background: url(./../assets/clock.png) no-repeat;
   background-size: 100%;
+  transform: scale(0.5);
 }
 
 #hour,
 #minute,
 #second {
   position: absolute;
-  background: black;
-  border-radius: 10px;
-  transform-origin: bottom;
+  height: 100%;
+  width: 100%;
+  filter: drop-shadow(10px 12px 5px hsl(0deg 0% 0% / 0.4));
 }
 
 #hour {
-  width: 1.8%;
-  height: 25%;
-  top: 25%;
-  left: 48.85%;
-  opacity: 0.8;
+  background: url(./../assets/hour.png) no-repeat;
+  height: 281px;
+  width: 52px;
+  transform-origin: 50% 77%;
+  top: 22.5%;
+  left: 46.9%;
 }
 
 #minute {
-  width: 1.6%;
-  height: 30%;
-  top: 19%;
-  left: 48.9%;
-  opacity: 0.8;
+  background: url(./../assets/minute.png) no-repeat;
+  height: 305px;
+  width: 52px;
+  transform-origin: 50% 91.5%;
+  top: 14.9%;
+  left: 47%;
 }
 
 #second {
-  width: 1%;
-  height: 40%;
-  top: 9%;
-  left: 49.25%;
-  opacity: 0.8;
+  background: url(./../assets/second.png) no-repeat;
+  height: 350px;
+  width: 30px;
+  transform-origin: 50% 84.5%;
+  top: 12.6%;
+  left: 48.2%;
 }

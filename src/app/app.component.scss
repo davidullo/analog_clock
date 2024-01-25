@@ -67,7 +67,7 @@ h6 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.5);
 }
 
 #clockContainer {
@@ -77,7 +77,6 @@ h6 {
   width: 800px;
   background: url(./../assets/clock.png) no-repeat;
   background-size: 100%;
-  transform: scale(0.5);
 }
 
 #hour,
@@ -117,7 +116,7 @@ h6 {
 }
 
 @media screen and (max-width: 450px) {
-  #clockContainer {
-    transform: scale(0.35);
+  #wrapper {
+    transform: translate(-50%, -50%) scale(0.35);
   }
 }
